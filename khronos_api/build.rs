@@ -31,6 +31,8 @@ fn main() {
     // containing file.
     let root = env::current_dir().unwrap().join("api_webgl/extensions");
 
+    panic!("have root: {:?}", root);
+
     // Generate a slice literal, looking like this:
     // `&[&*include_bytes!(..), &*include_bytes!(..), ..]`
     writeln!(file, "&[").unwrap();
